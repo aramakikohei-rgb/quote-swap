@@ -14,10 +14,20 @@ export interface Quote {
   createdAt: string;
 }
 
-const DATA_PATH = path.join(process.cwd(), 'data', 'quotes.json');
+const BUNDLED_PATH = path.join(process.cwd(), 'data', 'quotes.json');
+const TMP_PATH = '/tmp/quotes.json';
+
+function getDataPath(): string {
+  // On Vercel, the project directory is read-only.
+  // Copy to /tmp on first access so writes succeed.
+  if (!fs.existsSync(TMP_PATH)) {
+    fs.copyFileSync(BUNDLED_PATH, TMP_PATH);
+  }
+  return TMP_PATH;
+}
 
 export function getAllQuotes(): Quote[] {
-  const raw = fs.readFileSync(DATA_PATH, 'utf-8');
+  const raw = fs.readFileSync(getDataPath(), 'utf-8');
   return JSON.parse(raw);
 }
 
@@ -39,7 +49,7 @@ export function addQuote(quote: Omit<Quote, 'id' | 'createdAt'>): Quote {
     createdAt: new Date().toISOString(),
   };
   quotes.push(newQuote);
-  fs.writeFileSync(DATA_PATH, JSON.stringify(quotes, null, 2));
+  fs.writeFileSync(getDataPath(), JSON.stringify(quotes, null, 2));
   return newQuote;
 }
 
@@ -48,7 +58,7 @@ export function updateQuote(id: string, data: Partial<Omit<Quote, 'id' | 'create
   const index = quotes.findIndex((q) => q.id === id);
   if (index === -1) return null;
   quotes[index] = { ...quotes[index], ...data };
-  fs.writeFileSync(DATA_PATH, JSON.stringify(quotes, null, 2));
+  fs.writeFileSync(getDataPath(), JSON.stringify(quotes, null, 2));
   return quotes[index];
 }
 
@@ -56,6 +66,6 @@ export function deleteQuote(id: string): boolean {
   const quotes = getAllQuotes();
   const filtered = quotes.filter((q) => q.id !== id);
   if (filtered.length === quotes.length) return false;
-  fs.writeFileSync(DATA_PATH, JSON.stringify(filtered, null, 2));
+  fs.writeFileSync(getDataPath(), JSON.stringify(filtered, null, 2));
   return true;
 }

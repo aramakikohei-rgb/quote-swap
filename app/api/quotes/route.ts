@@ -29,18 +29,21 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Quote and author are required' }, { status: 400 });
   }
 
-  const newQuote = addQuote({
-    quote,
-    author,
-    bio: bio || '',
-    source: source || '',
-    sourceUrl: sourceUrl || '',
-    imageUrl: imageUrl || '',
-    quoteJa: quoteJa || '',
-    tags: tags || [],
-  });
-
-  return NextResponse.json(newQuote, { status: 201 });
+  try {
+    const newQuote = addQuote({
+      quote,
+      author,
+      bio: bio || '',
+      source: source || '',
+      sourceUrl: sourceUrl || '',
+      imageUrl: imageUrl || '',
+      quoteJa: quoteJa || '',
+      tags: tags || [],
+    });
+    return NextResponse.json(newQuote, { status: 201 });
+  } catch (e) {
+    return NextResponse.json({ error: `Failed to save: ${e instanceof Error ? e.message : 'Unknown error'}` }, { status: 500 });
+  }
 }
 
 export async function PUT(request: NextRequest) {
@@ -55,12 +58,15 @@ export async function PUT(request: NextRequest) {
     return NextResponse.json({ error: 'ID is required' }, { status: 400 });
   }
 
-  const updated = updateQuote(id, data);
-  if (!updated) {
-    return NextResponse.json({ error: 'Quote not found' }, { status: 404 });
+  try {
+    const updated = updateQuote(id, data);
+    if (!updated) {
+      return NextResponse.json({ error: 'Quote not found' }, { status: 404 });
+    }
+    return NextResponse.json(updated);
+  } catch (e) {
+    return NextResponse.json({ error: `Failed to update: ${e instanceof Error ? e.message : 'Unknown error'}` }, { status: 500 });
   }
-
-  return NextResponse.json(updated);
 }
 
 export async function DELETE(request: NextRequest) {
@@ -75,10 +81,13 @@ export async function DELETE(request: NextRequest) {
     return NextResponse.json({ error: 'ID is required' }, { status: 400 });
   }
 
-  const deleted = deleteQuote(id);
-  if (!deleted) {
-    return NextResponse.json({ error: 'Quote not found' }, { status: 404 });
+  try {
+    const deleted = deleteQuote(id);
+    if (!deleted) {
+      return NextResponse.json({ error: 'Quote not found' }, { status: 404 });
+    }
+    return NextResponse.json({ success: true });
+  } catch (e) {
+    return NextResponse.json({ error: `Failed to delete: ${e instanceof Error ? e.message : 'Unknown error'}` }, { status: 500 });
   }
-
-  return NextResponse.json({ success: true });
 }

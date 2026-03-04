@@ -120,7 +120,8 @@ export default function AdminPage() {
       setEditingId(null);
       fetchQuotes();
     } else {
-      showMessage('Failed to save quote', 'error');
+      const err = await res.json().catch(() => null);
+      showMessage(err?.error || 'Failed to save quote', 'error');
     }
   }
 
