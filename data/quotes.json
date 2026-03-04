@@ -328,5 +328,21 @@
     ],
     "createdAt": "2026-03-04T00:00:00Z",
     "quoteJa": "知性と意識はまったく別のものです。"
+  },
+  {
+    "id": "q023",
+    "quote": "You are not a drop in the ocean. You are the entire ocean in a drop.",
+    "author": "Rumi",
+    "bio": "13th-century Persian poet, Islamic scholar, and Sufi mystic whose works have been widely translated and remain among the most popular poems in the world.",
+    "source": "Attributed",
+    "sourceUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%D9%85%D9%88%D9%84%D8%A7%D9%86%D8%A7_%D8%A7%D8%AB%D8%B1_%D8%AD%D8%B3%DB%8C%D9%86_%D8%A8%D9%87%D8%B2%D8%A7%D8%AF_%28cropped%29.jpg",
+    "quoteJa": "あなたは大海の一滴ではありません。あなたは一滴の海全体です。",
+    "tags": [
+      "wisdom",
+      "self",
+      "spirituality"
+    ],
+    "createdAt": "2026-03-04T00:00:00Z"
   }
 ]
