@@ -1,0 +1,332 @@
+[
+  {
+    "id": "q001",
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "bio": "Theoretical physicist who developed the theory of relativity. Nobel Prize laureate in Physics (1921). Widely regarded as one of the most influential scientists of all time.",
+    "source": "Letter to a friend, 1930s",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Albert_Einstein",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Albert_Einstein_Head_cleaned.jpg",
+    "tags": [
+      "adversity",
+      "opportunity"
+    ],
+    "createdAt": "2024-01-01T00:00:00Z",
+    "quoteJa": "困難の中にこそチャンスがある。"
+  },
+  {
+    "id": "q002",
+    "quote": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "bio": "Classical Greek philosopher credited as the founder of Western philosophy. Known through the writings of his students Plato and Xenophon.",
+    "source": "Plato's Apology",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Apology_(Plato)",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Socrate_du_Louvre.jpg",
+    "tags": [
+      "wisdom",
+      "humility"
+    ],
+    "createdAt": "2024-01-02T00:00:00Z",
+    "quoteJa": "唯一の真の知恵は、自分が何も知らないことを知ることです。"
+  },
+  {
+    "id": "q003",
+    "quote": "One child, one teacher, one book, one pen can change the world.",
+    "author": "Malala Yousafzai",
+    "bio": "Pakistani activist for female education and the youngest Nobel Prize laureate. Survived an assassination attempt by the Taliban at age 15.",
+    "source": "Address to the United Nations, 2013",
+    "sourceUrl": "https://www.un.org/youthenvoy/2013/07/malala-yousafzai-address-at-the-un/",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Malala_Yousafzai_2023_portrait_2x3.jpg",
+    "tags": [
+      "education",
+      "change"
+    ],
+    "createdAt": "2024-01-03T00:00:00Z",
+    "quoteJa": "一人の子供、一人の教師、一冊の本、一本のペンが世界を変えることができます。"
+  },
+  {
+    "id": "q004",
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "bio": "American political figure, diplomat, and activist. Longest-serving First Lady of the United States. Chaired the UN Commission on Human Rights.",
+    "source": "It's Up to the Women, 1933",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Eleanor_Roosevelt_at_the_United_Nations%2C_circa_1946-1947_%283x4_cropped%29.jpg",
+    "tags": [
+      "dreams",
+      "future"
+    ],
+    "createdAt": "2024-01-04T00:00:00Z",
+    "quoteJa": "未来は夢の美しさを信じる者のものです。"
+  },
+  {
+    "id": "q005",
+    "quote": "I have learned over the years that when one's mind is made up, this diminishes fear.",
+    "author": "Rosa Parks",
+    "bio": "American civil rights activist known as the 'Mother of the Civil Rights Movement.' Her refusal to give up her bus seat sparked the Montgomery Bus Boycott.",
+    "source": "Quiet Strength, 1994",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rosa_Parks",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rosa_Parks%2C_November_1956_%28cropped%29.jpg",
+    "tags": [
+      "courage",
+      "determination"
+    ],
+    "createdAt": "2024-01-05T00:00:00Z",
+    "quoteJa": "私は何年もかけて、決意を固めると恐怖が軽減されることを学びました。"
+  },
+  {
+    "id": "q006",
+    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "bio": "American essayist, lecturer, philosopher, and poet who led the transcendentalist movement of the mid-19th century.",
+    "source": "Self-Reliance and Other Essays, 1841",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Self-Reliance",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
+    "tags": [
+      "individuality",
+      "courage"
+    ],
+    "createdAt": "2024-01-06T00:00:00Z",
+    "quoteJa": "道が通じそうなところには行かず、道のないところに行き、道を残してください。"
+  },
+  {
+    "id": "q007",
+    "quote": "The wound is the place where the Light enters you.",
+    "author": "Rumi",
+    "bio": "13th-century Persian poet, scholar, and Sufi mystic. His works are widely read and translated, making him one of the most popular poets in the world.",
+    "source": "Collected Poetry",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rumi",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/%D9%85%D9%88%D9%84%D8%A7%D9%86%D8%A7_%D8%A7%D8%AB%D8%B1_%D8%AD%D8%B3%DB%8C%D9%86_%D8%A8%D9%87%D8%B2%D8%A7%D8%AF_%28cropped%29.jpg",
+    "tags": [
+      "healing",
+      "spirituality"
+    ],
+    "createdAt": "2024-01-07T00:00:00Z",
+    "quoteJa": "傷は光が入ってくる場所です。"
+  },
+  {
+    "id": "q008",
+    "quote": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "bio": "Ancient Greek philosopher and polymath. Student of Plato and tutor to Alexander the Great. Founded the Lyceum and shaped Western philosophy for millennia.",
+    "source": "Attributed",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Aristotle",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg",
+    "tags": [
+      "perseverance",
+      "hope"
+    ],
+    "createdAt": "2024-01-08T00:00:00Z",
+    "quoteJa": "最も暗い瞬間こそ、光を見るために集中しなければなりません。"
+  },
+  {
+    "id": "q009",
+    "quote": "Whatever you are, be a good one.",
+    "author": "Abraham Lincoln",
+    "bio": "16th President of the United States. Led the nation through the Civil War, abolished slavery, and is widely regarded as one of America's greatest presidents.",
+    "source": "Attributed",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Abraham_Lincoln_1863_Portrait_%283x4_cropped%29.jpg",
+    "tags": [
+      "excellence",
+      "character"
+    ],
+    "createdAt": "2024-01-09T00:00:00Z",
+    "quoteJa": "あなたが何であれ、良い人になってください。"
+  },
+  {
+    "id": "q010",
+    "quote": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey",
+    "bio": "American talk show host, television producer, actress, and philanthropist. Her show was the highest-rated TV program of its kind in history.",
+    "source": "The Oprah Winfrey Show",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Oprah_Winfrey_2016.jpg",
+    "tags": [
+      "growth",
+      "wisdom"
+    ],
+    "createdAt": "2024-01-10T00:00:00Z",
+    "quoteJa": "傷を知恵に変えましょう。"
+  },
+  {
+    "id": "q011",
+    "quote": "The question isn't who is going to let me; it's who is going to stop me.",
+    "author": "Ayn Rand",
+    "bio": "Russian-American writer and philosopher known for developing Objectivism. Author of The Fountainhead and Atlas Shrugged.",
+    "source": "The Fountainhead, 1943",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Fountainhead",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Ayn_Rand_%281943_Talbot_portrait%29.jpg",
+    "tags": [
+      "ambition",
+      "determination"
+    ],
+    "createdAt": "2024-01-11T00:00:00Z",
+    "quoteJa": "問題は、誰が許可してくれるかということではありません。私を止めるのは誰だ。"
+  },
+  {
+    "id": "q012",
+    "quote": "Not everything that is faced can be changed, but nothing can be changed until it is faced.",
+    "author": "James Baldwin",
+    "bio": "American novelist, essayist, and social critic. His essays explored racial, sexual, and class distinctions in Western society.",
+    "source": "The New York Times, 1962",
+    "sourceUrl": "https://en.wikipedia.org/wiki/James_Baldwin",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/James_Baldwin_37_Allan_Warren_%28cropped%29.jpg",
+    "tags": [
+      "truth",
+      "change"
+    ],
+    "createdAt": "2024-01-12T00:00:00Z",
+    "quoteJa": "直面しているものすべてを変えることができるわけではありませんが、直面するまでは何も変えることはできません。"
+  },
+  {
+    "id": "q013",
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Will Durant",
+    "bio": "American writer, historian, and philosopher. Won the Pulitzer Prize for The Story of Civilization, co-authored with his wife Ariel Durant.",
+    "source": "The Story of Philosophy, 1926",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Will_Durant",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Will_Durant_1.jpg",
+    "tags": [
+      "excellence",
+      "habits"
+    ],
+    "createdAt": "2024-01-13T00:00:00Z",
+    "quoteJa": "私たちは繰り返し行っていることそのものなのです。つまり、卓越性とは行為ではなく習慣なのです。"
+  },
+  {
+    "id": "q014",
+    "quote": "I am no longer accepting the things I cannot change. I am changing the things I cannot accept.",
+    "author": "Angela Davis",
+    "bio": "American political activist, philosopher, and academic. Prominent figure in the Civil Rights Movement and advocate for social justice.",
+    "source": "Speech, 1970s",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Angela_Davis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Angela_Davis%2C_1974.jpg",
+    "tags": [
+      "activism",
+      "change"
+    ],
+    "createdAt": "2024-01-14T00:00:00Z",
+    "quoteJa": "私はもう変えることができないものを受け入れません。受け入れられないものは変えていきます。"
+  },
+  {
+    "id": "q015",
+    "quote": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
+    "author": "Ralph Waldo Emerson",
+    "bio": "American essayist, lecturer, philosopher, and poet who led the transcendentalist movement of the mid-19th century.",
+    "source": "Letters and Social Aims, 1876",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
+    "tags": [
+      "purpose",
+      "meaning"
+    ],
+    "createdAt": "2024-01-15T00:00:00Z",
+    "quoteJa": "人生の目的は幸せになることではありません。それは役に立つことであり、名誉なことであり、思いやりであり、自分が生き、よく生きてきたことで何らかの変化をもたらすことです。"
+  },
+  {
+    "id": "q016",
+    "quote": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "bio": "Indian lawyer and anti-colonial nationalist who led India to independence through nonviolent civil disobedience. Inspired civil rights movements worldwide.",
+    "source": "Attributed",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+    "tags": [
+      "change",
+      "leadership"
+    ],
+    "createdAt": "2024-01-16T00:00:00Z",
+    "quoteJa": "あなたは、あなたが望む世界の変化になるはずです。"
+  },
+  {
+    "id": "q017",
+    "quote": "I think, therefore I am.",
+    "author": "Rene Descartes",
+    "bio": "French philosopher, mathematician, and scientist. Dubbed the 'Father of Modern Philosophy.' His Meditations on First Philosophy remains a standard text.",
+    "source": "Discourse on the Method, 1637",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cogito,_ergo_sum",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
+    "tags": [
+      "philosophy",
+      "existence"
+    ],
+    "createdAt": "2024-01-17T00:00:00Z",
+    "quoteJa": "私はそう思う、だから私はそうである。"
+  },
+  {
+    "id": "q018",
+    "quote": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "bio": "American political figure, diplomat, and activist. Longest-serving First Lady of the United States. Chaired the UN Commission on Human Rights.",
+    "source": "This Is My Story, 1937",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eleanor_Roosevelt",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Eleanor_Roosevelt_at_the_United_Nations%2C_circa_1946-1947_%283x4_cropped%29.jpg",
+    "tags": [
+      "self-worth",
+      "empowerment"
+    ],
+    "createdAt": "2024-01-18T00:00:00Z",
+    "quoteJa": "あなたの同意なしに、誰もあなたに劣等感を抱かせることはできません。"
+  },
+  {
+    "id": "q019",
+    "quote": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "bio": "Classical Greek philosopher credited as the founder of Western philosophy. Known through the writings of his students Plato and Xenophon.",
+    "source": "Plato's Apology, 399 BC",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_unexamined_life_is_not_worth_living",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Socrate_du_Louvre.jpg",
+    "tags": [
+      "philosophy",
+      "self-reflection"
+    ],
+    "createdAt": "2024-01-19T00:00:00Z",
+    "quoteJa": "吟味されていない人生には生きる価値がない。"
+  },
+  {
+    "id": "q020",
+    "quote": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "bio": "American educator, author, and adviser to multiple presidents. Born into slavery, he became the most prominent African American leader of his era.",
+    "source": "Up from Slavery, 1901",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Up_from_Slavery",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Booker_T_Washington_retouched_flattened-crop.jpg",
+    "tags": [
+      "service",
+      "kindness"
+    ],
+    "createdAt": "2024-01-20T00:00:00Z",
+    "quoteJa": "自分を高めたいなら、他人を高めなさい。"
+  },
+  {
+    "id": "q021",
+    "quote": "History never repeats itself, but it does often rhyme.",
+    "author": "Mark Twain",
+    "bio": "American writer, humorist, and lecturer. Best known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn, often called the 'father of American literature.'",
+    "source": "Attributed",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mark_Twain",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mark_Twain_by_AF_Bradley_%28hq%29.jpg",
+    "tags": [
+      "history",
+      "wisdom"
+    ],
+    "createdAt": "2026-03-04T00:00:00Z",
+    "quoteJa": "歴史は決して繰り返されませんが、韻を踏むことはよくあります。"
+  },
+  {
+    "id": "q022",
+    "quote": "Intelligence and Consciousness are very different things.",
+    "author": "Yuval Noah Harari",
+    "bio": "Israeli historian, philosopher, and bestselling author of Sapiens, Homo Deus, and 21 Lessons for the 21st Century. Professor at the Hebrew University of Jerusalem.",
+    "source": "Homo Deus: A Brief History of Tomorrow, 2016",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/MKr364751_Yuval_Noah_Harari_%28Frankfurter_Buchmesse_2024%29.jpg",
+    "tags": [
+      "AI",
+      "consciousness"
+    ],
+    "createdAt": "2026-03-04T00:00:00Z",
+    "quoteJa": "知性と意識はまったく別のものです。"
+  }
+]

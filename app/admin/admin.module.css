@@ -1,0 +1,503 @@
+/* Grain */
+.grain {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Gate (password screen) */
+.gateContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 30%, #efe8dc 0%, #f5f2ed 70%);
+}
+
+.gateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 48px;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.gateLogo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.gateTitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.gateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 280px;
+}
+
+.gateInput {
+  width: 100%;
+  padding: 14px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.gateInput:focus {
+  border-color: var(--color-accent);
+}
+
+.gateError {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-danger);
+}
+
+.gateButton {
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gateButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.gateBack {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+/* Admin layout */
+.container {
+  min-height: 100vh;
+  background: var(--color-bg);
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  z-index: 50;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quoteCount {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.logoutButton {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: 1px solid var(--color-border);
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  z-index: 200;
+  animation: slideDown 0.3s ease;
+}
+
+.success {
+  background: #e8f5e8;
+  border: 1px solid #b8dab8;
+  color: #2a7a2a;
+}
+
+.error {
+  background: #f5e8e8;
+  border: 1px solid #dab8b8;
+  color: var(--color-danger);
+}
+
+/* Form section */
+.formSection {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 48px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.textarea {
+  line-height: 1.6;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.submitButton {
+  padding: 12px 32px;
+  background: none;
+  border: 1px solid var(--color-accent-dim);
+  border-radius: 8px;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.cancelButton {
+  padding: 12px 24px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+/* Image URL field */
+.imageUrlRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.imageUrlRow .input {
+  flex: 1;
+}
+
+.fetchButton {
+  padding: 12px 20px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fetchButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.imagePreview {
+  margin-top: 12px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.imagePreviewImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.3);
+}
+
+/* Quote list */
+.listSection {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 48px 60px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 40px;
+}
+
+.quoteList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quoteCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.quoteCard:hover {
+  border-color: var(--color-accent-dim);
+}
+
+.quoteCardActive {
+  border-color: var(--color-accent);
+}
+
+.quoteCardContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.quoteCardText {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.quoteCardAuthor {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+.quoteCardSource {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.quoteCardTags {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.quoteCardTag {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.quoteCardActions {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.editButton,
+.deleteButton {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+}
+
+.editButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.editButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.deleteButton {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.deleteButton:hover {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translate(-50%, -12px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .formSection {
+    padding: 24px 20px;
+  }
+
+  .listSection {
+    padding: 24px 20px 48px;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+
+  .quoteCard {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .quoteCardActions {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}
