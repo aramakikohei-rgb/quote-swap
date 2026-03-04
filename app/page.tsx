@@ -32,7 +32,29 @@ export default function Home() {
   const [palette, setPalette] = useState(COLOR_PALETTES[0]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imagePosition, setImagePosition] = useState('center 20%');
   const imageRef = useRef<HTMLImageElement>(null);
+
+  // Calculate optimal object-position based on image and viewport aspect ratios
+  const calcImagePosition = useCallback((imgWidth: number, imgHeight: number) => {
+    const viewportW = window.innerWidth;
+    const viewportH = window.innerHeight;
+    const imgRatio = imgWidth / imgHeight;
+    const viewRatio = viewportW / viewportH;
+
+    if (imgRatio > viewRatio) {
+      // Image is wider than viewport ratio — cropped on sides, center horizontally
+      // Face is typically in the upper-center of portraits
+      return 'center 25%';
+    } else {
+      // Image is taller than viewport ratio — cropped on top/bottom
+      // Keep face visible by positioning toward top
+      const diff = imgRatio / viewRatio;
+      // The more the image is taller relative to viewport, the more we shift up
+      const yPercent = Math.max(10, Math.min(35, 30 * diff));
+      return `center ${yPercent}%`;
+    }
+  }, []);
 
   const fetchQuote = useCallback(async () => {
     setIsTransitioning(true);
@@ -47,6 +69,7 @@ export default function Home() {
     if (data.imageUrl) {
       const img = new Image();
       img.onload = () => {
+        setImagePosition(calcImagePosition(img.naturalWidth, img.naturalHeight));
         setQuote(data);
         setImageLoaded(true);
         const newPalette = COLOR_PALETTES[Math.floor(Math.random() * COLOR_PALETTES.length)];
@@ -66,13 +89,24 @@ export default function Home() {
       setPalette(newPalette);
       setTimeout(() => setIsTransitioning(false), 100);
     }
-  }, []);
+  }, [calcImagePosition]);
 
   useEffect(() => {
     fetchQuote().then(() => {
       setTimeout(() => setIsLoaded(true), 200);
     });
   }, [fetchQuote]);
+
+  // Recalculate image position on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (imageRef.current && imageRef.current.naturalWidth) {
+        setImagePosition(calcImagePosition(imageRef.current.naturalWidth, imageRef.current.naturalHeight));
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [calcImagePosition]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -102,6 +136,7 @@ export default function Home() {
             src={quote.imageUrl}
             alt={quote.author}
             className={styles.portraitImage}
+            style={{ objectPosition: imagePosition }}
           />
           <div className={styles.portraitOverlay} />
           <div className={styles.portraitVignette} />
